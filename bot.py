@@ -556,7 +556,8 @@ def main():
     print("Starting up...")
     intents = discord.Intents.default()
     intents.members = True
-    intents.messages = True
+    intents.messages = True	
+    intents.message_content = True
     client = discord.Client(intents=intents)
     #client = discord.Client(intents=discord.Intents.all())
     #slash = SlashCommand(client, sync_commands=True)
